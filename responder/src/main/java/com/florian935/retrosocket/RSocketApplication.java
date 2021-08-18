@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Hooks;
 
 @SpringBootApplication
-public class RetrosocketApplication {
+public class RSocketApplication {
 
 	public static void main(String[] args) {
 
 		Hooks.onErrorDropped(error -> {});
-		SpringApplication.run(RetrosocketApplication.class, args);
+		SpringApplication.run(RSocketApplication.class, args);
 	}
 
 }

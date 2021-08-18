@@ -12,7 +12,7 @@
 	<artifactId>retrosocket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>retrosocket</name>
-	<description>Demo project for Spring Boot with retro socket feature</description>
+	<description>Demo project for Spring Boot with RSocket</description>
 	<properties>
 		<java.version>16</java.version>
 		<repackage.classifier/>
