@@ -25,7 +25,7 @@ public class RetrosocketRequesterApplication {
 
 		return event -> {
 			final Mono<String> reply = greetingClient
-					.greet(UUID.randomUUID().toString(), "toto");
+					.greet(UUID.randomUUID().toString(), "toto", 26);
 
 			reply.subscribe(System.out::println);
 		};
