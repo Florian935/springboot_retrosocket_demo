@@ -1,2 +1,3 @@
 com\florian935\retrosocket\RSocketApplication.class
+com\florian935\retrosocket\configuration\RSocketConfiguration.class
 com\florian935\retrosocket\controller\GreetingController.class

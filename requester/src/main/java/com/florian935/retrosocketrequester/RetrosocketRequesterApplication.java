@@ -9,6 +9,8 @@ import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.retrosocket.EnableRSocketClients;
 import reactor.core.publisher.Mono;
 
+import java.util.UUID;
+
 @SpringBootApplication
 @EnableRSocketClients
 public class RetrosocketRequesterApplication {
@@ -22,7 +24,8 @@ public class RetrosocketRequesterApplication {
 	ApplicationRunner runner(GreetingClient greetingClient) {
 
 		return event -> {
-			final Mono<String> reply = greetingClient.greet();
+			final Mono<String> reply = greetingClient
+					.greet(UUID.randomUUID().toString(), "toto");
 
 			reply.subscribe(System.out::println);
 		};
